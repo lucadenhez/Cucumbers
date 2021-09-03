@@ -1,0 +1,90 @@
+body {
+    background-color: #242424;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica', 'Arial', sans-serif;
+}
+
+.computerCard {
+    display: block;
+    background-color: #2b2b2b;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    border: 3px solid #3d3d3d;
+    box-shadow: 0px 1px 17px -3px rgba(0,0,0,0.79);
+    margin: 25px 15px;
+}
+
+.computerTitle {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 17px;
+
+}
+
+.infoDivider {
+    border: 1px solid #424242;
+    width: 220px;
+    margin: 0px 14px;
+}
+
+.connectionStatus {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+    padding: 12px 17px;
+}
+
+#connected {
+    color: #55cf96;
+}
+
+.location {
+    display: flex;
+    padding: 0px 8px;
+}
+
+.locationText {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+.locationIcon {
+    width: 17px;
+    filter: invert();
+    padding: 0px 8px;
+}
+
+.username {
+    display: flex;
+    padding: 7px 8px;
+}
+
+.usernameText {
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+.usernameIcon {
+    width: 17px;
+    filter: invert();
+    padding: 0px 8px;
+}
+
+#doughnut {
+    z-index: 5;
+    position: absolute;
+    left: 182px;
+    top: 100px;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px 200px;
+}

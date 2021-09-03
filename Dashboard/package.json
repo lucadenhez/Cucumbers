@@ -1,0 +1,14 @@
+{
+  "name": "cucumbers",
+  "version": "1.0.0",
+  "description": "The dashboard for remote controlling computers via socket. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Denhez",
+  "license": "ISC",
+  "dependencies": {
+    "chart": "^0.1.2"
+  }
+}
