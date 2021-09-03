@@ -7,9 +7,30 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="index.js"></script>
+
+        <script src="./scripts/chart.min.js"></script>
+        <script src="./scripts/index.js"></script>
     </head>
     <body>
-        <button onclick="initialInformation();">Get Initial Information</button>
+        <div class="grid">
+            <div class="computer1">
+                <div class="computerCard">
+                    <p class="computerTitle">DESKTOP-PHJ88FS:</p>
+                    <hr class="infoDivider">
+                    <p class="connectionStatus">Status - <span id="connected">Connected</span></p>
+                    <div class="location">
+                        <img class="locationIcon" src="./images/locationIcon.png">
+                        <p class="locationText">Seattle, WA</p>
+                    </div>
+                    <div class="username">
+                        <img class="usernameIcon" src="./images/usernameIcon.png">
+                        <p class="usernameText">lucadenhez</p>
+                    </div>
+                    <div class="chartContainer">
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

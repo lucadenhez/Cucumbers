@@ -25,22 +25,24 @@ public class DashboardHandler extends Thread {
                 ss = new ServerSocket(port);
                 website = ss.accept();
 
+                System.out.println("() Website connected to dashboard handler!");
+
                 out = new PrintWriter(website.getOutputStream(), true);
                 in = new BufferedReader(new InputStreamReader(website.getInputStream()));
                 stdIn = new BufferedReader(new InputStreamReader(System.in));
 
-                while (website.getInputStream().read() != -1) {
-                    sleep(100);
-                }
+                //while (website.getInputStream().read() != -1) {
+                    //sleep(100);
+                //}
 
-                String command = in.readLine();
+                String command = in.lines().toString();
 
                 System.out.println("() Recieved command from website!");
                 System.out.println("(!) Command: " + command);
 
-                if (command.equals("initialInformation")) {
-                    Main.commandQueue.add("initialInformation");
-                }
+                //if (command.equals("initialInformation")) {
+                    //Main.commandQueue.add("initialInformation");
+                //}
 
             }
         }

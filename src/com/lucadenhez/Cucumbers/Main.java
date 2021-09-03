@@ -21,15 +21,15 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int threadsAvailable = Runtime.getRuntime().availableProcessors();
 
-        System.out.println("Available Threads: " + threadsAvailable);
+        System.out.println("Available Threads: " + threadsAvailable + " (" + (threadsAvailable - 2) + " for connected computers)");
+
+        DashboardHandler dashboardHandler = new DashboardHandler(dashboardPort);
+        dashboardHandler.start();
+
+        System.out.println("\nStarted website handler!");
 
         while (true) {
             sleep(1000);
-
-            DashboardHandler dashboardHandler = new DashboardHandler(dashboardPort);
-            dashboardHandler.start();
-
-            System.out.println("Started website handler!");
 
             Server server = new Server();
             ss = server.openLoginPort(loginPort);
